@@ -1,10 +1,10 @@
 export const navigations = [
   { name: "Dashboarda", path: "/dashboard/default", icon: "dashboard" },
-  { name: "Riwayat", path: "./Riwayat/default", icon: "dashboard" },
-  { name: "Kelola Alat", path: "/Kelola_Alat/default", icon: "dashboard" },
+  { name: "Riwayat", path: "./Riwayat/default", icon: "Adjust" },
+  { name: "Kelola Alat", path: "/Kelola_Alat/default", icon: "Android" },
   { name: "Kelola Client", path: "/Kelola_Client/default", icon: "dashboard" },
-  { name: "Layanan", path: "/Layanan/default", icon: "dashboard" },
-  { name: "Laporan", path: "/Laporan/default", icon: "dashboard" },
+  { name: "Layanan", path: "/Layanan/default", icon: "history" },
+  { name: "Laporan", path: "/Laporan/default", icon: "Alarm" },
   { name: "Pengaturan", path: "/Pengaturan/default", icon: "dashboard" },
   // { label: "PAGES", type: "label" },
   // {

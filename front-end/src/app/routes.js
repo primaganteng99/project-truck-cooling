@@ -18,6 +18,7 @@ const ForgotPassword = Loadable(lazy(() => import("app/views/sessions/ForgotPass
 const AppEchart = Loadable(lazy(() => import("app/views/charts/echarts/AppEchart")));
 // DASHBOARD PAGE
 const Analytics = Loadable(lazy(() => import("app/views/dashboard/Analytics")));
+const Riwayat = Loadable(lazy(() => import("app/views/Riwayat/Riwayat")));
 
 const routes = [
   {
@@ -30,7 +31,7 @@ const routes = [
       ...materialRoutes,
       // dashboard route
       { path: "/dashboard/default", element: <Analytics />, auth: authRoles.admin },
-      { path: "/Riwayat/default", element: <Analytics />, auth: authRoles.admin },
+      { path: "/Riwayat/default", element: <Riwayat />, auth: authRoles.admin },
       { path: "/Kelola_Alat/default", element: <Analytics />, auth: authRoles.admin },
       { path: "/Kelola_Client/default", element: <Analytics />, auth: authRoles.admin },
       { path: "/Layanan/default", element: <Analytics />, auth: authRoles.admin },
