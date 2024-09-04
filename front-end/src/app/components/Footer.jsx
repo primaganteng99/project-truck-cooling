@@ -41,12 +41,6 @@ export default function Footer() {
       <AppBar color="primary" position="static" sx={{ zIndex: 96 }}>
         <AppFooter>
           <FooterContent>
-            <a href="https://ui-lib.com/downloads/matx-pro-react-admin/">
-              <Button variant="contained" color="secondary">
-                Get MatX Pro
-              </Button>
-            </a>
-
             <Span m="auto"></Span>
 
             <Paragraph m={0}>

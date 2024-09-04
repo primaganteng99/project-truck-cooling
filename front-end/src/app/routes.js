@@ -30,6 +30,12 @@ const routes = [
       ...materialRoutes,
       // dashboard route
       { path: "/dashboard/default", element: <Analytics />, auth: authRoles.admin },
+      { path: "/Riwayat/default", element: <Analytics />, auth: authRoles.admin },
+      { path: "/Kelola_Alat/default", element: <Analytics />, auth: authRoles.admin },
+      { path: "/Kelola_Client/default", element: <Analytics />, auth: authRoles.admin },
+      { path: "/Layanan/default", element: <Analytics />, auth: authRoles.admin },
+      { path: "/Laporan/default", element: <Analytics />, auth: authRoles.admin },
+      { path: "/Pengaturan/default", element: <Analytics />, auth: authRoles.admin },
       // e-chart route
       { path: "/charts/echarts", element: <AppEchart />, auth: authRoles.editor }
     ]
