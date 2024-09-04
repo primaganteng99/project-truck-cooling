@@ -17,8 +17,13 @@ const ForgotPassword = Loadable(lazy(() => import("app/views/sessions/ForgotPass
 // E-CHART PAGE
 const AppEchart = Loadable(lazy(() => import("app/views/charts/echarts/AppEchart")));
 // DASHBOARD PAGE
-const Analytics = Loadable(lazy(() => import("app/views/dashboard/Analytics")));
+const Dashboard = Loadable(lazy(() => import("app/views/dashboard/Analytics")));
 const Riwayat = Loadable(lazy(() => import("app/views/Riwayat/Riwayat")));
+const Pengaturan = Loadable(lazy(() => import("app/views/Pengaturan/Pengaturan")));
+const Layanan = Loadable(lazy(() => import("app/views/Layanan/Layanan")));
+const Laporan = Loadable(lazy(() => import("app/views/Laporan/Laporan")));
+const Kelola_Client = Loadable(lazy(() => import("app/views/Kelola_Client/Kelola_Client")));
+const Kelola_Alat = Loadable(lazy(() => import("app/views/Kelola_Alat/Kelola_Alat")));
 
 const routes = [
   {
@@ -30,13 +35,13 @@ const routes = [
     children: [
       ...materialRoutes,
       // dashboard route
-      { path: "/dashboard/default", element: <Analytics />, auth: authRoles.admin },
+      { path: "/dashboard/default", element: <Dashboard />, auth: authRoles.admin },
       { path: "/Riwayat/default", element: <Riwayat />, auth: authRoles.admin },
-      { path: "/Kelola_Alat/default", element: <Analytics />, auth: authRoles.admin },
-      { path: "/Kelola_Client/default", element: <Analytics />, auth: authRoles.admin },
-      { path: "/Layanan/default", element: <Analytics />, auth: authRoles.admin },
-      { path: "/Laporan/default", element: <Analytics />, auth: authRoles.admin },
-      { path: "/Pengaturan/default", element: <Analytics />, auth: authRoles.admin },
+      { path: "/Kelola_Alat/default", element: <Kelola_Alat />, auth: authRoles.admin },
+      { path: "/Kelola_Client/default", element: <Kelola_Client />, auth: authRoles.admin },
+      { path: "/Layanan/default", element: <Layanan />, auth: authRoles.admin },
+      { path: "/Laporan/default", element: <Laporan />, auth: authRoles.admin },
+      { path: "/Pengaturan/default", element: <Pengaturan />, auth: authRoles.admin },
       // e-chart route
       { path: "/charts/echarts", element: <AppEchart />, auth: authRoles.editor }
     ]
