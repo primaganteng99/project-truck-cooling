@@ -44,7 +44,7 @@ export default function Footer() {
             <Span m="auto"></Span>
 
             <Paragraph m={0}>
-              Design and Developed by <a href="http://ui-lib.com">UI Lib</a>
+              Cooling truck 
             </Paragraph>
           </FooterContent>
         </AppFooter>
