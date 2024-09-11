@@ -1,5 +1,5 @@
 export const navigations = [
-  { name: "Dashboarda", path: "/dashboard/default", icon: "home" },
+  { name: "Dashboard", path: "/dashboard/default", icon: "home" },
   { name: "Riwayat", path: "./Riwayat/default", icon: "history" },
   { name: "Kelola Alat", path: "/Kelola_Alat/default", icon: "build" },
   { name: "Kelola Client", path: "/Kelola_Client/default", icon: "person" },

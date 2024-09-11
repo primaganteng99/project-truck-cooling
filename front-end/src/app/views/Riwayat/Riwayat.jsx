@@ -58,8 +58,8 @@ export default function Analytics() {
               <RowCards
                 height="300px"
                 color={[palette.primary.dark, palette.primary.main, palette.primary.light]}
-              />
-            </Card>
+              /> 
+            </Card> 
 
             {/* <UpgradeCard /> */}
             {/* <Campaigns /> */}

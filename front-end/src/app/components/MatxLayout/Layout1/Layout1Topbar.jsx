@@ -132,9 +132,51 @@ const Layout1Topbar = () => {
           </IconBox> */}
         </Box>
 
-        <Box display="flex" alignItems="center">
+        {/* <Box display="flex" alignItems="center">
           <MatxSearchBox />
-        </Box>
+
+          <NotificationProvider>
+            <NotificationBar />
+          </NotificationProvider>
+
+          <ShoppingCart />
+
+          <MatxMenu
+            menuButton={
+              <UserMenu>
+                <Hidden xsDown>
+                  <Span>
+                    Hi <strong>{user.name}</strong>
+                  </Span>
+                </Hidden>
+                <Avatar src={user.avatar} sx={{ cursor: "pointer" }} />
+              </UserMenu>
+            }>
+            <StyledItem>
+              <Link to="/">
+                <Home />
+                <Span>Home</Span>
+              </Link>
+            </StyledItem>
+
+            <StyledItem>
+              <Link to="/page-layouts/user-profile">
+                <Person />
+                <Span>Profile</Span>
+              </Link>
+            </StyledItem>
+
+            <StyledItem>
+              <Settings />
+              <Span>Settings</Span>
+            </StyledItem>
+
+            <StyledItem onClick={logout}>
+              <PowerSettingsNew />
+              <Span>Logout</Span>
+            </StyledItem>
+          </MatxMenu>
+        </Box> */}
       </TopbarContainer>
     </TopbarRoot>
   );
