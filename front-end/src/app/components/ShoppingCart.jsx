@@ -105,12 +105,6 @@ export default function ShoppingCart({ container }) {
 
   return (
     <Fragment>
-      <IconButton onClick={handleDrawerToggle}>
-        <Badge color="secondary" badgeContent={cartList.length}>
-          <ShoppingCartIcon sx={{ color: "text.primary" }} />
-        </Badge>
-      </IconButton>
-
       <ThemeProvider theme={settings.themes[settings.activeTheme]}>
         <Drawer
           anchor="right"
@@ -119,54 +113,6 @@ export default function ShoppingCart({ container }) {
           container={container}
           onClose={handleDrawerToggle}
           ModalProps={{ keepMounted: true }}>
-          <MiniCart>
-            <CartBox>
-              <ShoppingCartIcon color="primary" />
-              <h5>Cart</h5>
-            </CartBox>
-
-            <Box flexGrow={1} overflow="auto">
-              {cartList.map((product, i) => (
-                <ProductBox key={i}>
-                  <Box mr="4px" display="flex" flexDirection="column">
-                    <IconButton size="small" onClick={() => handleAddQty(product.id)}>
-                      <KeyboardArrowUp />
-                    </IconButton>
-
-                    <IconButton
-                      onClick={() => handleRemoveQty(product.id)}
-                      disabled={!(product.qty - 1)}
-                      size="small">
-                      <KeyboardArrowDown />
-                    </IconButton>
-                  </Box>
-
-                  <Box mr={1}>
-                    <IMG src={product.imgUrl} alt={product.title} />
-                  </Box>
-
-                  <ProductDetails>
-                    <H6>{product.title}</H6>
-                    <Small color="text.secondary">
-                      ${product.price} x {product.qty}
-                    </Small>
-                  </ProductDetails>
-
-                  <IconButton size="small">
-                    <Clear fontSize="small" />
-                  </IconButton>
-                </ProductBox>
-              ))}
-            </Box>
-
-            <Button
-              color="primary"
-              variant="contained"
-              onClick={handleCheckoutClick}
-              sx={{ width: "100%", borderRadius: 0 }}>
-              Checkout (${totalCost.toFixed(2)})
-            </Button>
-          </MiniCart>
         </Drawer>
       </ThemeProvider>
     </Fragment>
