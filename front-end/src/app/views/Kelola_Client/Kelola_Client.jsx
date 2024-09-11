@@ -49,6 +49,16 @@ export default function Analytics() {
             <H4>Daftar Client</H4>
             {/* <RowCards /> */}
           </Grid>
+
+          <Grid item lg={100} md={4} sm={12} xs={12}>
+            <Card sx={{ px: 2, py: 25, mb: 2 }}>
+              <Title>Card</Title>
+              <SubTitle>Pake kalo dibutuhin di page tertentu</SubTitle>
+            </Card>
+
+            {/* <UpgradeCard /> */}
+            {/* <Campaigns /> */}
+          </Grid>
         </Grid>
       </ContentBox>
     </Fragment>
